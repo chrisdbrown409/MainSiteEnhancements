@@ -148,8 +148,7 @@ body, html {
 	
 	
 table {
-  	table class="sortable";
-	width: 95%;
+  	width: 95%;
 	border-collapse: collapse;
 	font-family: times,serif;
 	font-size:09pt;
@@ -221,7 +220,9 @@ Courses<br />
 	 
 <div>
 <table>
-  <tr>
+  	<table class="sortable">
+	<thead>
+	<tr>
 	<th>Course</th>
 	<th>Organization</th>
 	<th>Course Link</th>
@@ -230,10 +231,11 @@ Courses<br />
 	<th>Certficication</th>
 	<th>Cost</th>
 	<th>Expires</th>
-	  
-  </tr>
+</tr>
+</thread>
 
-  <tr>
+<tbody>
+ <tr>
     	<td>Certified Safe 5&reg; Practitioner</td>
 	<td><a href= https://www.scaledagile.com/>Scaled Agile, Inc.</a></td> 
 	<TD>course link</td>
@@ -323,6 +325,7 @@ Courses<br />
 	<td>N/A</td>
   </tr>
 </table>
+</tbody>
 </div>
 
 <!---Table 2 Start--->
