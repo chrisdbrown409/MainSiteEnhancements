@@ -6,49 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.collapsible {
-  	background-color: #CD6155;
-  	margin-left: 40px;
-  	color: white;
-  	cursor: pointer;
-  	padding: 18px;
-  	width: 50%;
-  	border: none;
-  	text-align: left;
-  	outline: none;
-  	font-size: 14px;
-	font-family: times,serif;
-}
 
-.active, .collapsible:hover {
-  background-color: #A93226;
-}
-
-.collapsible:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	margin-left: 40px;
-  	color: white;
-  	font-weight: bold;
-  	float: right;
-  	font-size: 14px;
-	font-family: times,serif;
-}
-
-.active:after {
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-}
-
-.content {
-  	padding: 0 18px;
-  	margin-left: 40px;
-  	max-height: 0;
-  	overflow: hidden;
-  	transition: max-height 0.2s ease-out;
-  	background-color: #F8F9F9;
-  	font-size: 12px;
-	font-family: times,serif;
-}
-  
   
 body, html {
   height: 100%;
@@ -58,55 +16,49 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://etfdb.com/media/W1siZiIsIjIwMTkvMDkvMTMvNDJvYWcwc3Y1eV9EZWFkX0Rvd25fVGhlX0xvbmdfUm9hZF9XaXRoX1RoaXNfQ29ycG9yYXRlX0JvbmRfRVRGLmpwZyJdLFsicCIsInRodW1iIiwiMzAweDU2MF4iXV0/Dead%20Down%20The%20Long%20Road%20With%20This%20Corporate%20Bond%20ETF.jpg");
-  height: 35%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	height: 30%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+	max-width:100%; /*responsive design*/
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  	text-align: center;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
 }
 
-.hero-text button {
-  	border: none;
-  	outline: 0;
-  	display: inline-block;
-  	padding: 10px 25px;
-  	color: black;
-  	background-color: #ddd;
-  	text-align: center;
-  	cursor: pointer;
+body {
 	font-family: times,serif;
 }
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-  
+	
   .sidenav {
 	height: 100%;
 	text-align: Left;
-  	width: 130px;
   	position: absolute; /*will hold sidenav in place*/
  	 z-index: 1;
-  	top: 220px;
-  	left: 10px;
+  	width: 12%; /*repsonsive:*15*/
+	top: 32%;
+	left: 1%;
+	/*width: 130px;*/
+	/*top: 220px;*
+  	/*left: 10px;*/
   	background: White;
   	overflow-x: hidden;
   	padding: 0px 0;
 	font-family: times,serif;
+	/*font-family: Arial, sans-serif;*/
+	font-size: 12px;
 }
-
+	  
 .sidenav a {
-  	padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+  	/*padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
  	text-decoration: none;
 	text-align: Left;
 	font-family: times,serif;
@@ -116,14 +68,15 @@ body, html {
 }
 
 .sidenav a:hover {
-  color: #064579;
+  	color: #064579;
 }
 
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  /*font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
+	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+  	/*font-size: 28px; /* Increased text to enable scrolling */
+  	padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -133,8 +86,9 @@ body, html {
 	
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
-	margin-left: 40px;
-	/*width: 100%;*/
+	/*margin-left: 40px;*/
+	margin-left: 4%; /*reponsive*/
+	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
 	bottom: 0;
@@ -195,12 +149,12 @@ tr:nth-child(even) {
   
   
 <div class="sidenav">
-    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Additional Links</U></P>
-    	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a>
-    	<a href="https://github.com/chrisdbrown409">GIT Hub Root</a>	
-    	<a href="https://github.com/chrisdbrown409/MainProgress">GIT Hub Repository</a>
-    	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a>
-    	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a>
+    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Additional Links</U></P><br />
+    	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
+    	<a href="https://github.com/chrisdbrown409">GIT Hub Root</a><br />	
+    	<a href="https://github.com/chrisdbrown409/MainProgress">GIT Hub Repository</a><br />
+    	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a><br />
+    	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
 	    <!--- LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br /> --->
     </div>
   
@@ -443,53 +397,21 @@ Courses<br />
 <!---Table 2 Finish--->
 
 
-
-<!---start buttons--->  
-<!---
-	 <button class="collapsible">International Software Testing Qualifications Board (ISTQB)</button>
-<div class="content">
-  <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board" target="_blank">https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board</a><br />
-     Site: <a href="https://atsqa.org/account/login?redirect=%2Faccount" target="_blank">https://atsqa.org/account/login?redirect=%2Faccount</a><br />
-	Advantages:<br />
-	Disadvantages:<br />
-	
-    </p>
-</div>
---->
-
  
-
-
    
    
-   
-<!--- Collaspe Script--->   
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 
 
  <div>  
 <Footer>
 <HR>  
    <b>Repository Information:</b><br />
-  	Version:1.07<br />
+  	Version:2.00<br />
   	Last Update:06-25-2021<br />   
- </Footer>
-	</div>  
+ 	<HR>  
+	</Footer>
+</div>  
 </body>
 </html>
 
