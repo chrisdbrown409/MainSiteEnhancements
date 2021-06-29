@@ -220,7 +220,49 @@ tr:nth-child(even) {
 </table>
 </div>
   
-   
+ 
+
+<table name="mytable" id="mytable">
+  <thead>
+    <tr><th>column1</th><th>column2</th><th>column3</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>value1</td><td>value2</td><td>value3</td></tr>
+    <tr><td>value4</td><td>value5</td><td>value6</td></tr>
+    <tr><td>value7</td><td>value8</td><td>value9</td></tr>
+  </tbody>
+</table>
+
+function sortTable(){
+  var rows = $('#mytable tbody  tr').get();
+
+  rows.sort(function(a, b) {
+
+  var A = $(a).children('td').eq(1).text().toUpperCase();
+  var B = $(b).children('td').eq(1).text().toUpperCase();
+
+  if(A < B) {
+    return -1;
+  }
+
+  if(A > B) {
+    return 1;
+  }
+
+  return 0;
+
+  });
+
+  $.each(rows, function(index, row) {
+    $('#mytable').children('tbody').append(row);
+  });
+}
+
+
+
+
+
+
 
 
 
